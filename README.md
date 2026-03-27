@@ -14,9 +14,9 @@ homeassistant: true
 permit_join: true
 mqtt:
   base_topic: zigbee2mqtt
-    server: 'mqtt://mqtt' # The mosquitto server in this case.
-    serial:
-      port: /dev/ttyACM0  # The serial device. It should be the same as the device entry in docker-compose.yml.
+  server: 'mqtt://mqtt' # The mosquitto server in this case.
+serial:
+  port: /dev/ttyACM0  # The serial device. It should be the same as the device entry in docker-compose.yml.
 ```
 
 More info here: http://balkian.com/controlling-zigbee-devices-with-mqtt.html
